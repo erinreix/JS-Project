@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //diagonal of a square
+        let a = 9;
+        let b = 9;
+        let c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+        console.log(c);
+
+        //area of a triangle
+        let d = 5;
+        let e = 6;
+        let f = 7;
+        let side = (d+e+f)/2;
+        let area = Math.sqrt(side*(side-d)*(side-e)*(side-f));
+
+        console.log(area);
+
+        //circumference and surface area
+        const r = 4;
+        const cir = (2 * Math.PI * r);
+        const surArea = (Math.PI * Math.sqrt(r,2));
+
+        console.log(cir);
+        console.log(surArea);
+    </script>
+</body>
+</html>
