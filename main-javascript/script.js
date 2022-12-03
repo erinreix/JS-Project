@@ -1,23 +1,5 @@
 const choices = ["rock", "paper", "scissors"];
 
-function computerPlay () {
-    return choices [Math.floor(Math.random() * choices.length)];
-}
-
-function playRound (playerSelection, computerSelection) {
-    if (playerSelection === computerSelection) {
-        return "It's a tie!";
-    } else if (
-        (playerSelection == "rock" && computerSelection == "scissors") ||
-        (playerSelection == "scissors" && computerSelection == "paper") ||
-        (playerSelection == "paper" && computerSelection =="rock") 
-    ){
-        return `You're the winner! ${playerSelection} beats ${computerSelection}`
-    } else {
-        return `You Lose! ${computerSelection} beats ${playerSelection}`
-    }
-}
-
 function game () {
     for (let i = 0; i < 5; i++) {
         const playerSelection = playerChoice();
@@ -40,5 +22,23 @@ function playerChoice () {
         }
     }
 }  
+
+function computerPlay () {
+    return choices [Math.floor(Math.random() * choices.length)];
+}
+
+function playRound (playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        return "It's a tie!";
+    } else if (
+        (playerSelection == "rock" && computerSelection == "scissors") ||
+        (playerSelection == "scissors" && computerSelection == "paper") ||
+        (playerSelection == "paper" && computerSelection =="rock") 
+    ){
+        return `You're the winner! ${playerSelection} beats ${computerSelection}`
+    } else {
+        return `You Lose! ${computerSelection} beats ${playerSelection}`
+    }
+}
 
 game()
